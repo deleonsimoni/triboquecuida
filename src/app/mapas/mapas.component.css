@@ -1,0 +1,64 @@
+agm-map {
+  z-index: 0;
+  /*margin-top: -170px;*/
+  height: 100vh;
+  width: 100%;
+
+}
+
+.success {
+  background-color: rgb(146, 230, 226);
+}
+
+.success-produto {
+  background-color: rgb(146, 230, 146);
+}
+
+.show-options {
+
+  display: block;
+
+
+}
+
+.hide-options {
+
+  display: none;
+
+}
+
+
+.close {
+  color: white;
+  text-shadow: none;
+  opacity: 1;
+  font-size: xx-large;
+}
+
+#wrapper {
+  position: relative;
+}
+
+#over_map {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 99;
+}
+
+.modal-color {
+  background-color: #fe343ca6;
+  color: white;
+}
+
+.sub-faltando {
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.btn-remove {
+  background-color: #8a0000;
+  color: white;
+  border-radius: .4em;
+}

@@ -1,0 +1,143 @@
+<!-- Masthead -->
+
+<!-- Services - Deleon Junk -->
+<!-- <header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5 sombra">Pronto para construir a história da escola?</h1>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <form>
+          <div class="form-row">
+            <div class="col-12 col-md-9 mb-2 mb-md-0">
+              <input type="text" class="form-control form-control-lg" [(ngModel)]='itemPesquisa' name="first"
+                placeholder="ex: ESCOLAS, CADERNOS, DEPOIMENTOS..." />
+            </div>
+            <div class="col-12 col-md-3">
+              <button [routerLink]="'/mapas'" [queryParams]="itemPesquisa" class="btn btn-block btn-lg btn-primary">
+                Buscar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<ng-template id="template" #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Em construção</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    Aguardando Financimento...
+    <br />
+    <img src="./assets/img/aguardandoFinanciamento.jpg" class="img-fluid capa-livro" />
+
+  </div>
+</ng-template> -->
+
+<!-- About Section -->
+<div class="container home-container">
+  <!-- <section class="text-center">
+    <img src="./assets/img/name-red.png" class="img-fluid">
+  </section> -->
+
+  <!-- Cards -->
+  <div class="row">
+    <div class="col-md-12">
+      <section style="margin-top: 1em">
+        <mat-card class="card-home black">
+          <mat-card-header>
+            <mat-card-title>
+              <h2 class="" style="text-align: center;color: rgb(119, 111, 111)">Tribo que Cuida</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content  style="color: rgb(119, 111, 111)">
+            <b>Conectando pessoas</b><br />
+            Ajude quem precisa, peça ajuda se precisar.<br><br>
+            <p>Bem vindo a maior rede de solidariedade. Diante do crítico cenário mundial, desenvolvemos a Tribo que Cuida no intuito de proporcionar conexões de solidariedade para com os trabalhadores e suas famílias as quais estão sendo abaladas por este cenário. Este app possibilita o cadastro dos Receptores juntamente com as suas necessidades para serem supridas de forma voluntária e anônima dos Doadores. Os Doadores poderão doar alimentos e produtos de higiene para os Receptores cadastrados. A forma de entrega e recebimento das doações fica sobre a responsabilidade dos envolvidos. As informações do cadastro dos receptores somente serão divulgadas caso o doador queira fazer a doação criando um registro na plataforma. </p>
+
+
+          </mat-card-content>
+          <mat-card-actions>
+
+            <div class="justify-content-center row">
+
+              <a [routerLink]="['/']" fragment="doar" class=" mr-2">
+                <button class="btn btn-primary">
+                  Doar
+                </button>
+              </a>
+
+              <a [routerLink]="['/']" fragment="receber" class="">
+                <button style="background-color: red; color: white;" class="btn  ">
+                  Pedir ajuda
+                </button>
+              </a>
+
+            </div>
+          </mat-card-actions>
+
+        </mat-card>
+      </section>
+    </div>
+    <div class="col-md-6">
+      <section id="doar" style="margin-top: 1em">
+        <mat-card class="card-home blue ">
+          <img mat-card-image class="img-card animated pulse infinite" height="400" [src]="imageDoar"
+            alt="Doar">
+          <mat-card-header>
+            <mat-card-title>
+              <h2 class="">Doadores</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Doadores são pessoas que fazem doações de alimentos, doação de sangue ou produtos de
+              higiene sob demanda e de forma anônima aos trabalhadores que estão impedidos de trabalhar
+              em razão do Covid. </p>
+            <div class="justify-content-center ">
+              <a [routerLink]="['/mapas']" fragment="doar"><button class="btn btn-primary mt-2">Clique para
+                  Ajudar</button></a>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </section>
+    </div>
+
+    <div class="col-md-6">
+      <section id="receber" style="margin-top: 1em">
+        <mat-card class="card-home red">
+          <img mat-card-image class="img-card animated pulse infinite" height="400" [src]="imageReceber"
+            alt="Pedir ajuda">
+          <mat-card-header>
+            <mat-card-title>
+              <h2 class="">Pedir ajuda</h2>
+            </mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Aqui as pessoas que estão impedidas de trabalhar e estão necessitando
+              de doação de alimentos, doação de sangue ou produtos de higiene para a sua sobrevivência nesse
+              período do Covid. </p>
+            <div class="justify-content-center">
+              <a [routerLink]="['/mapas']" fragment="doar"><button style="background-color: red;"
+                  class="btn btn-primary mt-2">Clique para
+                  Solicitar Ajuda</button></a>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </section>
+    </div>
+
+  </div>
+
+
+
+</div>
