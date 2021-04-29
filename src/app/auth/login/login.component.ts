@@ -107,7 +107,7 @@ export class LoginComponent {
     }
 
     if (!this.openTerms) {
-      this.toastr.error('Leia os termos de uso para prosseguir', 'Atenção: ');
+      this.toastr.error('Leia e concorde com as politicas de privacidade e termo de uso antes de se cadastrar', 'Atenção: ');
       return;
     }
 
